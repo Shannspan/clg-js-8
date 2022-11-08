@@ -139,7 +139,7 @@ function poppyRestart() {
 
 restartButton.addEventListener("click", poppyRestart);
 
-//Object constructor 
+
 
 // Object constructor function 
 function beachPick(beach, location, type, vehicle) {
@@ -159,3 +159,52 @@ console.log(myFave);
 // Fetch data from new object and change page output 
 document.getElementById("fave-beach").innerHTML =
 "My favourite beach on the coral coast of Western Australia is " + myFave.orientation(); 
+
+//Declare Array
+let shells = ["Tun", "Turban", "Top Snail", "Cowry", "Limpet", "Clam", "Trochus", "Baler", "Pipi", "Mussel", "Abalone", "Cone Snail"];
+
+ //add item to end of array using push method
+ shells.push("Operculum");
+ console.log(shells);
+
+ //put array into a-z order using sort method
+ shells.sort();
+ console.log(shells);
+
+//remove last item from array using pop method
+shells.pop();
+console.log(shells);
+
+ //isolate items in array
+ console.log(shells[5]);
+
+ console.log(shells[0]);
+
+ //use length property to find number of items in array
+
+ console.log(shells.length);
+
+//find method to locate item in the shells array indexed as 10 (therefore 11th in array listing as numbering starts from 0)
+
+function findTen(index10)  {
+return index10 = [10];
+}
+
+console.log(shells.find(findTen));
+
+//change page output using array
+
+document.getElementById("shell-array").innerHTML = "While beachcombing we found " + shells.length + " types of shells, including:" + "<br>" + shells.join(", ");
+
+//style individual array item differently to others ???? How? 
+
+function colourFirst(indexItem) {
+  return indexItem = [0];
+}
+
+console.log(shells.find(colourFirst));
+
+document.getElementById("shell-array").style.color = "#D5D3D9";
+
+
+

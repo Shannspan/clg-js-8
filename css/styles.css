@@ -155,6 +155,11 @@ p {
     font-size: 1em;
     text-align: center;
 }
+#shell-array {
+    color: #320E3B;
+    font-size: 1em;
+    text-align: center;
+}
 .wrapper {   
     border: none;
     margin: 1em;

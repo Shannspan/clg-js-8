@@ -14,16 +14,11 @@ function popShell() {
 
 gameTitle.addEventListener("mouseover",popShell);
 
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-ctx.fillStyle = "#cca2ab";
-ctx.fillRect(10, 10, 150, 100);
 
 //Function for Index page Select favourite shell
 
 const select = document.querySelector('select');
-const para = document.querySelector('p');
+const para = document.getElementById("selector-output");
 
 select.addEventListener('change', setShell);
 

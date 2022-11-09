@@ -196,7 +196,7 @@ console.log(shells.find(findTen));
 
 document.getElementById("shell-array").innerHTML = "While beachcombing we found " + shells.length + " types of shells, including:" + "<br>" + shells.join(", ");
 
-//style individual array item differently to others ???? How? 
+//Use function and find to isolate individual indexed item from shell array. Still trying to figure out howto style that index item once it is isolated.
 
 function colourFirst(indexItem) {
   return indexItem = [0];
@@ -204,7 +204,36 @@ function colourFirst(indexItem) {
 
 console.log(shells.find(colourFirst));
 
+//This only styles the element with an id (eg all text within)
+
 document.getElementById("shell-array").style.color = "#D5D3D9";
+
+//Breaking a loop once the array reaches a certain point?
+const gameScore = [10, 2, 27, 19, 51, 75, 35, 68, 82];
+
+//Sort in to ascending numerical order
+gameScore.sort(function(a, b){return a-b});
+console.log(gameScore);
+
+//While loop
+let a = 2;
+
+while (a < gameScore.length) {
+  console.log(gameScore[a]);
+  a++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

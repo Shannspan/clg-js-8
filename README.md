@@ -11,5 +11,5 @@ All array code is in sttgame.js. Output to console and beachcombing.html
 
 Next I want to learn how to 
 
-* Use array properties and methods to manipulate array items on frontend
+* Use array properties and methods to manipulate array items style on frontend
 * Learn more about the uses of arrays for complex data management

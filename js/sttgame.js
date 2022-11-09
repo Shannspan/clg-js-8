@@ -14,7 +14,7 @@ const cellElements = document.querySelectorAll(".cell");
 //Pull in result text from DOM
 const resultElement = document.getElementById("result");
 
-//add event listener
+//add event listener using forEach loop
 cellElements.forEach((cell, index) => {
   cell.addEventListener("click", () => {
     placeMarker(index)
